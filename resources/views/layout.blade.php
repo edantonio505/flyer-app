@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Project Flyer</title>
-	<link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ elixir('css/all.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">
 </head>
 <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -29,5 +29,8 @@
 <div class="container">
 	@yield('content')
 </div>
+
+<script src="{{ elixir('js/all.js') }}"></script>
+@include('flash')
 </body>
 </html>
